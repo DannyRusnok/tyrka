@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# tyrka
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite + TypeScript project with Linaria for zero-runtime CSS-in-JS and React Router for client-side routing.
 
-Currently, two official plugins are available:
+## Features
+- React 19
+- Vite for fast development and builds
+- TypeScript for type safety
+- Linaria for zero-runtime CSS-in-JS
+- React Router v7 for routing
+- ESLint for code quality
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v18 or newer recommended)
+- npm (v9 or newer)
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (for Backend)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Development
+```bash
+npm run dev
 ```
+
+### Build
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+---
+
+## Backend (.NET 8)
+
+The `Backend` folder contains a .NET 8 Web API project.
+
+### Jak spustit Backend
+1. Otevři terminál v kořenové složce projektu nebo ve složce `Backend`.
+2. Spusť příkaz:
+   ```powershell
+   dotnet run --project Backend/Backend.csproj
+   ```
+   nebo pokud jsi přímo ve složce `Backend`:
+   ```powershell
+   dotnet run
+   ```
+3. Backend poběží na adrese (typicky):
+   [http://localhost:5286/](http://localhost:5286/)
+
+### Build Backend
+Pokud chceš Backend zbuildit:
+```powershell
+dotnet build Backend/Backend.csproj
+```
+
+---
