@@ -1,4 +1,11 @@
 import * as React from 'react';
-import { StyledTitle } from './styled';
+import { Link } from 'react-router-dom';
 
-export const App: React.FC = () => (<StyledTitle>welcome to linaria</StyledTitle>);
+export const App: React.FC = () => {
+    return <>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </nav>
+    </>
+};
