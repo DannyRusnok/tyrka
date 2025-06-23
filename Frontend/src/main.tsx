@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router.tsx'
-import { Layout } from './styled.tsx'
+import { Layout } from './GlobalStyles.tsx'
 import { Navigation } from './components/Navigation/index.tsx'
 
 createRoot(document.getElementById('root')!).render(
