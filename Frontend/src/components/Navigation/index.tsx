@@ -11,7 +11,7 @@ export const Navigation: React.FC = () => {
         <h1>Tyrka</h1>
         <NavigationContacts>
             <a href="mailto:tyrka@gmail.com"><label>tyrka@gmail.com</label></a>
-            <label>+420 123 456 789</label>
+            <a href="tel:+420123456789"><label>+420 123 456 789</label></a>
         </NavigationContacts>
     </NavigationContainer>;
 }
