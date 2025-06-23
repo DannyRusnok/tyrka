@@ -10,7 +10,7 @@ export const Navigation: React.FC = () => {
         </NavigationLinks>
         <h1>Tyrka</h1>
         <NavigationContacts>
-            <label>tyrka@gmail.com</label>
+            <a href="mailto:tyrka@gmail.com"><label>tyrka@gmail.com</label></a>
             <label>+420 123 456 789</label>
         </NavigationContacts>
     </NavigationContainer>;
