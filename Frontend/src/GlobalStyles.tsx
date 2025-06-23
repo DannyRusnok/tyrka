@@ -6,6 +6,11 @@ export const globalStyles = css`
     body {
       font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
   }
 `;
 
