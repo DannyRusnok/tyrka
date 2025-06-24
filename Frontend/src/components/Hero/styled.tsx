@@ -9,10 +9,12 @@ export const HeroWrapper = styled.div`
     justify-content: center;
 `;
 
-export const HeroImage = styled.img`
+export const HeroImage = styled.div`
     width: 100%;
     height: 90vh;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: block;
 `;
 

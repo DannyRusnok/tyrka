@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { HeroWrapper, HeroImage, HeroOverlay, HeroButton, HeroOverlayText } from './styled';
-import { useInView } from './useInView';
+import { useInView } from '../../hooks/useInView';
 
 interface HeroProps {
   scrollToRef?: React.RefObject<HTMLDivElement>;
@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollToRef }) => {
 
   return (
     <HeroWrapper>
-      <HeroImage src="/heroimage.png" />
+      <HeroImage style={{ backgroundImage: 'url(/heroimage.png)' }} />
       <HeroOverlay>
         <HeroOverlayText ref={textRef} className={textInView ? 'show' : ''}>
           Prozkoumejte naši chatu k pronájmu.

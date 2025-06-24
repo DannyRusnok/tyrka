@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AdditionalContentWrapper, AdditionalContentCenter, AdditionalImage, AdditionalText, AdditionalTitle } from './styled';
-import { useInView } from './useInView';
+import { useInView } from '../../hooks/useInView';
 
 export interface AdditionalInfoProps {
   scrollToRef: React.RefObject<HTMLDivElement>;
