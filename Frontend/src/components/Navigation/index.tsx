@@ -6,7 +6,7 @@ export const Navigation: React.FC = () => {
     return <NavigationContainer>
         <NavigationLinks>
             <NavigationLink to="/">Domů</NavigationLink>
-            <NavigationLink to="/about">O nás</NavigationLink>
+            <NavigationLink to="/rezervace">Rezervace</NavigationLink>
         </NavigationLinks>
         <NavigationTitle>Chata Tyrka</NavigationTitle>
         <NavigationContacts>
