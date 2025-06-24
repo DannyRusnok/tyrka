@@ -3,6 +3,9 @@ import { css } from "@linaria/core";
 
 export const globalStyles = css`
   :global() {
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }

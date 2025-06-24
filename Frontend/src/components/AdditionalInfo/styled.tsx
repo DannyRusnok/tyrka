@@ -15,7 +15,7 @@ export const AdditionalContentCenter = styled.div`
 
 export const AdditionalImage = styled.img`
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   margin-bottom: 1.5rem;
   opacity: 0;
@@ -32,8 +32,8 @@ export const AdditionalImage = styled.img`
 
 export const AdditionalText = styled.p`
   text-align: center;
-  font-size: 1.1rem;
-  max-width: 300px;
+  font-size: 1.5rem;
+  max-width: 400px;
   width: 100%;
   margin: 0 auto;
   opacity: 0;
@@ -50,7 +50,7 @@ export const AdditionalText = styled.p`
 
 export const AdditionalTitle = styled.h2`
   text-align: center;
-  margin: 8rem 0 4rem 0;
+  margin: 4rem 0;
   font-size: 4rem;
   font-weight: 400;
   opacity: 0;

@@ -2,11 +2,7 @@ import * as React from 'react';
 import { AdditionalContentWrapper, AdditionalContentCenter, AdditionalImage, AdditionalText, AdditionalTitle } from './styled';
 import { useInView } from '../../hooks/useInView';
 
-export interface AdditionalInfoProps {
-  scrollToRef: React.RefObject<HTMLDivElement>;
-}
-
-export const AdditionalInfo: React.FC<AdditionalInfoProps> = ({ scrollToRef }) => {
+export const AdditionalInfo: React.FC = () => {
   const [titleRef, titleInView] = useInView<HTMLHeadingElement>({ threshold: 0.2 });
   const [img1Ref, img1InView] = useInView<HTMLImageElement>({ threshold: 0.2 });
   const [img2Ref, img2InView] = useInView<HTMLImageElement>({ threshold: 0.2 });
@@ -17,10 +13,10 @@ export const AdditionalInfo: React.FC<AdditionalInfoProps> = ({ scrollToRef }) =
 
   return (
     <>
-      <AdditionalTitle ref={titleRef} className={titleInView ? 'show' : ''}>
+      <AdditionalTitle id="additional-content" ref={titleRef} className={titleInView ? 'show' : ''}>
         Proč si vybrat Chatu Tyrka?
       </AdditionalTitle>
-      <AdditionalContentWrapper ref={scrollToRef}>
+      <AdditionalContentWrapper>
         <AdditionalContentCenter>
           <AdditionalImage ref={img1Ref} className={img1InView ? 'show' : ''} src="/heroimage.png" alt="Chata Tyrka" />
           <AdditionalText ref={text1Ref} className={text1InView ? 'show' : ''}>
